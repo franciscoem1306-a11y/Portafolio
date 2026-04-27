@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Francisco Gonzalez — Full Stack Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Share+Tech+Mono&family=Oswald:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- BARRA DE ESTADO RETRO -->
+  <div class="status-bar">
+    <span class="blink">● EN SERVICIO</span>
+    <span class="status-centro">FRANCISCO GONZALEZ / FULL STACK DEV</span>
+    <span id="odometro">000000 KM</span>
+  </div>
+
+  <!-- NAVBAR -->
+  <header>
+    <h1>FranciscoGonzalez<span class="accent">.dev</span></h1>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="nav">
+      <a href="#proyectos">Proyectos</a>
+      <a href="#perfil">Perfil</a>
+      <a href="#skills">Skills</a>
+      <a href="#blog">Blog</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="scanlines"></div>
+    <div class="hero-content">
+      <p class="hero-badge">// JAVA FULL STACK DEVELOPER //</p>
+      <h1>Soy <span class="accent">Francisco<br>Gonzalez</span></h1>
+      <p class="hero-sub">Construyo software que no falla.<br>Como las pick up de los 90 que si aguantan el trabajo pesado.</p>
+      <button class="btn-primary" onclick="document.querySelector('#perfil').scrollIntoView({behavior:'smooth'})">
+        Ver mi Perfil
+      </button>
+    </div>
+  </section>
+
+  <!-- PROYECTOS -->
+  <section id="proyectos" class="seccion">
+    <div class="inner">
+      <div class="section-label">[ LA CARGA ]</div>
+      <h2 class="titulo-seccion">Proyectos</h2>
+      <p class="seccion-sub">Proyectos Destacados.</p>
+      <div class="proyectos-lista">
+        <div class="card">
+          <div class="img-container">
+            <img src="img/grid.jpeg" alt="Grid & Flex">
+            <div class="card-badge live">LIVE</div>
+            <div class="overlay">
+              <a href="w" target="_blank">Ver Despliegue</a>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3>Grid & Flex — E-commerce</h3>
+            <p><strong>Proyecto:</strong> E-commerce creada junto a un grupo de desarrolladores, enfocada en diseño moderno, experiencia de usuario intuitiva y responsive design.</p>
+            <div class="tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+  <div class="img-container">
+    <img src="img/calle.jpeg" alt="Calle Libre">
+    <div class="card-badge live">LIVE</div>
+    <div class="overlay">
+      <a href="https://cnastienka.github.io/Calle-Libre/" target="_blank">Ver Despliegue</a>
+    </div>
+  </div>
+  <div class="card-body">
+    <h3>Calle Libre — Landing Page</h3>
+    <p><strong>Proyecto:</strong> Landing desarrollada en equipo, con diseño no solo moderno si no que atractivo y responsive design para el usuario.</p>
+    <div class="tags">
+      <span>HTML</span><span>CSS</span><span>JavaScript</span>
+    </div>
+  </div>
+</div>
+    </div>
+  </section>
+
+  <!-- PERFIL -->
+  <section id="perfil" class="seccion dark">
+    <div class="inner">
+      <div class="section-label light">[ BAJO EL CAPÓ ]</div>
+      <h2 class="titulo-seccion light">Perfil Profesional</h2>
+      <div class="perfil-grid">
+        <div class="perfil-foto-wrap">
+          <div class="foto-frame">
+            <img src="Francisco.jpeg" alt="Francisco Gonzalez">
+            <div class="foto-placa">FG — FULL STACK DEV</div>
+          </div>
+        </div>
+        <div class="perfil-texto">
+          <p class="perfil-bio">Desarrollo software robusto, funcional y bien estructurado. Me distingo por mi capacidad de adaptación, comunicación asertiva y una constante búsqueda de aprendizaje. Enfocado en soluciones reales que funcionan bajo presión.</p>
+          <div class="perfil-skills-rapido">
+            <div class="skill-col">
+              <span class="skill-titulo">Java</span>
+              <span class="skill-sub">POO</span>
+            </div>
+            <div class="skill-col">
+              <span class="skill-titulo">SQL</span>
+              <span class="skill-sub">Bases de datos</span>
+            </div>
+            <div class="skill-col">
+              <span class="skill-titulo">Git</span>
+              <span class="skill-sub">Versionamiento</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRAYECTORIA -->
+  <section id="trayectoria" class="seccion gris">
+    <div class="inner">
+      <div class="section-label">[ BITÁCORA DE RUTA ]</div>
+      <h2 class="titulo-seccion">Trayectoria y Formación</h2>
+      <p class="seccion-sub">Un resumen de mi trayectoria académica y técnica.</p>
+      <a href="bautista.pdf" class="cv-card" download>
+        <div class="cv-icono">DOC</div>
+        <div class="cv-texto">
+          <strong>CURRICULUM VITAE</strong>
+          <span>Francisco González — Full Stack Developer</span>
+        </div>
+        <div class="cv-arrow">DESCARGAR</div>
+      </a>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-fecha">2024 — Presente</span>
+            <h4>Full Stack Developer</h4>
+            <p>Desarrollo de proyectos web con Java, Spring Boot y JavaScript. Arquitectura de software orientada a objetos.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-fecha">2023</span>
+            <h4>Bootcamp — Desarrollo Web</h4>
+            <p>Formación intensiva en HTML, CSS, JavaScript, Java y bases de datos relacionales.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="seccion dark">
+    <div class="inner">
+      <div class="section-label light">[ ESPECIFICACIONES ]</div>
+      <h2 class="titulo-seccion light">Habilidades</h2>
+      <div class="skills-bloque">
+        <h3 class="skills-cat">SOFT SKILLS</h3>
+        <div class="chips">
+          <span>Trabajo en Equipo</span>
+          <span>Atención al Detalle</span>
+          <span>Metodología SCRUM</span>
+          <span>Comunicación Asertiva</span>
+          <span>Resolución de Problemas</span>
+        </div>
+      </div>
+      <div class="skills-bloque">
+        <h3 class="skills-cat">TECH SKILLS</h3>
+        <div class="chips">
+          <span class="chip-tech">Java</span>
+          <span class="chip-tech">HTML5 / CSS3</span>
+          <span class="chip-tech">SQL</span>
+          <span class="chip-tech">JavaScript</span>
+          <span class="chip-tech">Spring Boot</span>
+          <span class="chip-tech">Bootstrap</span>
+          <span class="chip-tech">Python</span>
+          <span class="chip-tech">Git</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOG -->
+  <section id="blog" class="seccion">
+    <div class="inner">
+      <div class="section-label">[ MANUAL DEL MOTOR ]</div>
+      <h2 class="titulo-seccion">Blog de Desarrollo</h2>
+      <div class="blog-lista">
+        <div class="blog-card">
+          <div class="blog-num">01</div>
+          <div class="blog-texto">
+            <h3>Algoritmos de Alto Rendimiento</h3>
+            <p>Reconozco la importancia de las estructuras discretas al diseñar jerarquías de clases robustas en Java. Código que corre como motor bien afinado.</p>
+          </div>
+        </div>
+        <div class="blog-card">
+          <div class="blog-num">02</div>
+          <div class="blog-texto">
+            <h3>Análisis Predictivo con Datos</h3>
+            <p>Modelado estadístico y traducción de fenómenos complejos en patrones de datos utilizables. Del caos a la hoja de ruta.</p>
+          </div>
+        </div>
+        <div class="blog-card">
+          <div class="blog-num">03</div>
+          <div class="blog-texto">
+            <h3>Clean Code en Alta Concurrencia</h3>
+            <p>Me enfoco en principios SOLID y patrones de código limpio en Java bajo condiciones de alta concurrencia y escalabilidad.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="seccion dark">
+    <div class="inner contacto-inner">
+      <div class="section-label light">[ TALLER ]</div>
+      <h2 class="titulo-seccion light">Contacto</h2>
+      <a href="mailto:tu@email.com" class="contacto-email">francisco.em.1306@gmail.com</a>
+      <div class="contacto-links">
+        <a href="https://github.com/franciscoem1306-a11y" target="_blank" class="contacto-link">
+          <span>GH</span> GITHUB
+        </a>
+        <a href="https://www.linkedin.com/in/emiliano-gonz%C3%A1lez-abb023394/" target="_blank" class="contacto-link">
+          <span>IN</span> LINKEDIN
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-stripe"></div>
+    <p>&copy; 1995–<span id="anio"></span> Francisco González · Construido con motor V8 + Java</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
