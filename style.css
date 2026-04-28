@@ -83,7 +83,7 @@ nav a:last-child { border-bottom: none; }
   position: relative;
   background:
     radial-gradient(circle, rgba(0,0,0,0.88) 0%, rgba(0,0,0,0.65) 100%),
-    url('https://media.ed.edmunds-media.com/ford/f-150/1995/oem/1995_ford_f-150_extended-cab-pickup_xlt_fq_oem_1_500.jpg') center/cover no-repeat;
+    url('img/g.jpeg') center/cover no-repeat;
   color: #fff;
   padding: 110px 24px 90px;
   text-align: center;
@@ -231,6 +231,7 @@ nav a:last-child { border-bottom: none; }
   flex-shrink: 0;
   box-sizing: border-box;
 }
+
 
 .carrusel-track .card {
   min-width: 100%;
