@@ -46,46 +46,84 @@
   </section>
 
   <!-- PROYECTOS -->
-  <section id="proyectos" class="seccion">
-    <div class="inner">
-      <div class="section-label">[ LA CARGA ]</div>
-      <h2 class="titulo-seccion">Proyectos</h2>
-      <p class="seccion-sub">Proyectos Destacados.</p>
-      <div class="proyectos-lista">
-        <div class="card">
-          <div class="img-container">
-            <img src="img/grid.jpeg" alt="Grid & Flex">
-            <div class="card-badge live">LIVE</div>
-            <div class="overlay">
-              <a href="w" target="_blank">Ver Despliegue</a>
+<section id="proyectos" class="seccion">
+  <div class="inner">
+    <div class="section-label">[ LA CARGA ]</div>
+    <h2 class="titulo-seccion">Proyectos</h2>
+    <p class="seccion-sub">Proyectos Destacados.</p>
+
+    <div class="carrusel-wrap">
+      <button class="carr-btn carr-prev" id="prev">&#8592;</button>
+
+      <div class="carrusel-viewport">
+        <div class="carrusel-track" id="track">
+
+          <!-- CARD 1 — Grid & Flex -->
+          <div class="card">
+            <div class="img-container">
+              <img src="img/ec.jpeg" alt="Grid & Flex">
+              <div class="card-badge live">LIVE</div>
+              <div class="overlay">
+                <a href="w" target="_blank">Ver Despliegue</a>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3>Grid & Flex — E-commerce</h3>
+              <p><strong>Proyecto:</strong> E-commerce desarrollada en equipo, enfocada en diseño moderno, experiencia de usuario y responsive design.</p>
+              <div class="tags">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Java</span><span>Git</span><span>GitHub</span><span>Figma</span>
+              </div>
             </div>
           </div>
-          <div class="card-body">
-            <h3>Grid & Flex — E-commerce</h3>
-            <p><strong>Proyecto:</strong> E-commerce creada junto a un grupo de desarrolladores, enfocada en diseño moderno, experiencia de usuario intuitiva y responsive design.</p>
-            <div class="tags">
-              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+
+          <!-- CARD 2 — Calle Libre -->
+          <div class="card">
+            <div class="img-container">
+              <img src="img/calle.jpeg" alt="Calle Libre">
+              <div class="card-badge live">LIVE</div>
+              <div class="overlay">
+                <a href="https://cnastienka.github.io/Calle-Libre/" target="_blank">Ver Despliegue</a>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3>Calle Libre — Landing Page</h3>
+              <p><strong>Proyecto:</strong> Landing page creada junto a un grupo de desarrolladores, diseño moderno, experiencia de usuario y responsive design.</p>
+              <div class="tags">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Git</span><span>GitHub</span>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="card">
-  <div class="img-container">
-    <img src="img/calle.jpeg" alt="Calle Libre">
-    <div class="card-badge live">LIVE</div>
-    <div class="overlay">
-      <a href="https://cnastienka.github.io/Calle-Libre/" target="_blank">Ver Despliegue</a>
+
+          <!-- CARD 3 — Agenda de Contactos -->
+          <div class="card">
+            <div class="img-container img-placeholder">
+              <div class="img-texto-grande">AGENDA<br>DE<br>CONTACTOS</div>
+              <div class="card-badge hackaton">HACKATÓN</div>
+            </div>
+            <div class="card-body">
+              <h3>Agenda de Contactos</h3>
+              <p><strong>Proyecto:</strong> Aplicación de consola desarrollada en Java para gestión de contactos. Hackatón 2 · Generation México · 2026.</p>
+              <div class="tags">
+                <span>Java</span><span>IntelliJ</span><span>POO</span><span>Git</span><span>GitHub</span>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /track -->
+      </div><!-- /viewport -->
+
+      <button class="carr-btn carr-next" id="next">&#8594;</button>
     </div>
+
+    <!-- Dots -->
+    <div class="carr-dots">
+      <span class="dot active" data-i="0"></span>
+      <span class="dot" data-i="1"></span>
+      <span class="dot" data-i="2"></span>
+    </div>
+
   </div>
-  <div class="card-body">
-    <h3>Calle Libre — Landing Page</h3>
-    <p><strong>Proyecto:</strong> Landing desarrollada en equipo, con diseño no solo moderno si no que atractivo y responsive design para el usuario.</p>
-    <div class="tags">
-      <span>HTML</span><span>CSS</span><span>JavaScript</span>
-    </div>
-  </div>
-</div>
-    </div>
-  </section>
+</section>
 
   <!-- PERFIL -->
   <section id="perfil" class="seccion dark">
