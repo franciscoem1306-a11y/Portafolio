@@ -290,4 +290,4 @@ nav a:last-child { border-bottom: none; }
   line-height: 1;
   letter-spacing: 3px;
 }
-.card-badge.hackaton { background: var(--rojo); color: #fff; }
+.card-badge.hackaton { background: #2e7d32; color: #fff; }
